@@ -4,7 +4,7 @@
 1 kilogram = 2.204 pound
 */
 // let value = Number(document.getElementById("value").value)
-let value = 50
+let value = 0
 
 
 document.getElementById("length")
@@ -15,6 +15,8 @@ let mass  =document.getElementById("mass");
 let btnEl = document.getElementById("btn");
 
 btnEl.addEventListener("click", function convert() {
+    value = document.getElementById("value")
+    value = value.value
     lengthConverter();
     volumeConverter();
     massConverter()
